@@ -26,8 +26,9 @@
                         <th>Track Name</th>
                         <th>Collection Price</th>
                         <th>iTunes URL</th>
+
                         </tr>
-                    </thead>
+                    </theadö
                     <tbody>
                         <!-- Loop to Build Table -->
                         {% for entry in template_data %}
@@ -35,6 +36,8 @@
                                 <td>{{entry.artistName}}</td>
                                 <td>{{entry.trackCensoredName}}</td>
                                 <td>{{entry.collectionPrice}}</td>
+                                <td><a href="{{entry.artistViewUrl}}">{{entry.artistViewUrl}}</a></td>
+     
                             </tr>
                         {% endfor %}
                     </tbody>

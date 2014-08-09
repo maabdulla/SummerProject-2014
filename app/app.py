@@ -45,7 +45,7 @@ def handle_form_submit():
 @app.route('/template_example')
 def template_example():
     template_data = fetch()
-
+    print "template_data size = %d" % len(template_data)
     return render_template('template_example.html', artist=template_data[0]['artistName'], template_data = template_data)
 
 
